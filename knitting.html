@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Barnali Textile - Stock Market Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <link rel="icon" href="https://barnalitextile.com.bd/wp-content/uploads/2023/09/fab-50x50.png" sizes="32x32">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <!-- <div class="container-fluid topbar bg-light px-5 d-none d-lg-block">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <a href="#" class="text-muted small me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
+                        <a href="tel:+01234567890" class="text-muted small me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+01234567890</a>
+                        <a href="mailto:example@gmail.com" class="text-muted small me-0"><i class="fas fa-envelope text-primary me-2"></i>Example@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a href="#"><small class="me-3 text-dark"><i class="fa fa-user text-primary me-2"></i>Register</small></a>
+                        <a href="#"><small class="me-3 text-dark"><i class="fa fa-sign-in-alt text-primary me-2"></i>Login</small></a>
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown"><small><i class="fa fa-home text-primary me-2"></i> My Dashboard</small></a>
+                            <div class="dropdown-menu rounded">
+                                <a href="#" class="dropdown-item"><i class="fas fa-user-alt me-2"></i> My Profile</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-comment-alt me-2"></i> Inbox</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-bell me-2"></i> Notifications</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-cog me-2"></i> Account Settings</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-power-off me-2"></i> Log Out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    <!-- Topbar End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <!--<h1 class="text-primary"><i class="fas fa-search-dollar me-3"></i>Barnali Textile</h1>-->
+                <img src="img/logo.png" alt="Barnali Textile Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Who We Are</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="mission-vision-values.html" class="dropdown-item">Mission Vision &
+                                Values</a>
+                            <a href="at-a-glance.html" class="dropdown-item">At a Glance</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">What We Do</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="knitting.html" class="dropdown-item active">Knitting</a>
+                            <a href="dyeing.html" class="dropdown-item">Dyeing</a>
+                            <a href="cutting.html" class="dropdown-item">Cutting</a>
+                            <a href="printing.html" class="dropdown-item">Printing</a>
+                            <a href="sewing.html" class="dropdown-item">Sewing</a>
+                            <a href="finishing.html" class="dropdown-item">Finishing</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Our Green Project</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="membership.html" class="dropdown-item">Membership</a>
+                            <a href="compliance.html" class="dropdown-item">Compliance</a>
+                            <a href="barnali-collection-ltd.html" class="dropdown-item">Barnali Collection Ltd</a>
+                        </div>
+                    </div>
+                    <a href="barnali-collection-ltd.html" class="nav-item nav-link">Barnali Collection Ltd</a>
+                    <a href="buyers-special.html" class="nav-item nav-link">Buyer's Special</a>
+                    <a href="our-portfolio.html" class="nav-item nav-link">Our Portfolio</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                </div>
+                <a href="#" class="btn btn-primary rounded-pill py-2 px-4 my-3 my-lg-0 flex-shrink-0">Video Profile</a>
+            </div>
+        </nav>
+
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb" style="background-image: url(/img/k.jpg);">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Knitting</h4>
+                <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">What We Do</a></li>
+                    <li class="breadcrumb-item active text-primary">Knitting</li>
+                </ol>
+            </div>
+        </div>
+        <!-- Header End -->
+    </div>
+    <!-- Navbar & Hero End -->
+
+
+    <!-- Content Section -->
+    <section class="container py-5">
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h2 class="text-primary text-center text-lg-start mb-4"
+                    style="text-transform:capitalize;font-weight:700;letter-spacing:1px;">Our Manufactured Knit Fabric
+                    Types and Designs</h2>
+                <ul class="list-group list-group-flush mb-3">
+                    <li class="list-group-item">100% Cotton / Blended / Lycra</li>
+                    <li class="list-group-item">Single Jersey full feeder &amp; gap feeder</li>
+                    <li class="list-group-item">Rib 1x1, 2x1, 4x2, and 6x4</li>
+                    <li class="list-group-item">Rib / Rib with Lycra</li>
+                    <li class="list-group-item">Fleece 100% Cotton/PC</li>
+                    <li class="list-group-item">French Terry 100% Cotton/PC</li>
+                    <li class="list-group-item">Diamond Terry</li>
+                    <li class="list-group-item">Terry Lycra</li>
+                    <li class="list-group-item">100% Cotton/Pique</li>
+                    <li class="list-group-item">Lacoste</li>
+                    <li class="list-group-item">Honey comb</li>
+                    <li class="list-group-item">Twill</li>
+                    <li class="list-group-item">Zigiug</li>
+                </ul>
+                <p class="mb-0">And various needle drops as well as other designs.</p>
+            </div>
+            <div class="col-lg-6 text-center">
+                <a href="/img/knit-03.jpg" data-lightbox="image-1" data-title="Knit Fabric">
+                    <img src="/img/knit-03.jpg" alt="Knit Fabric" class="img-fluid rounded shadow-lg"
+                        style="max-width:100%;height:auto;">
+                </a>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-12">
+                <h3 class="text-center mb-4" style="color:#ff6600;text-transform:capitalize;font-weight:600;">Our
+                    Knitting Technology</h3>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped">
+                        <tbody>
+                            <tr>
+                                <td><strong>Production Space</strong></td>
+                                <td><strong>16,500 sft ~ 1,532.90 sqm</strong></td>
+                                <td><strong>51 Machines</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-12">
+                <h3 class="text-center mb-4" style="color:#ff6600;font-weight:600;">[A] 21 machines: Four track Single
+                    Jersey with full feeder Lycra attachment</h3>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Brand</th>
+                                <th>Diameter</th>
+                                <th>RPM (80%)</th>
+                                <th>Gauge</th>
+                                <th>Feeder</th>
+                                <th>Versatility</th>
+                                <th>Capacity (per day)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Jlunn Long</td>
+                                <td>27”</td>
+                                <td>29.6</td>
+                                <td>24</td>
+                                <td>81(3F)</td>
+                                <td>Single Jersey</td>
+                                <td>250 kg</td>
+                            </tr>
+                            <tr>
+                                <td>Jlunn Long</td>
+                                <td>28”</td>
+                                <td>26</td>
+                                <td>24</td>
+                                <td>112(4F)</td>
+                                <td>Single Jersey</td>
+                                <td>300 kg</td>
+                            </tr>
+                            <tr>
+                                <td>Jlunn Long</td>
+                                <td>30”</td>
+                                <td>26.7</td>
+                                <td>24</td>
+                                <td>90(3F)</td>
+                                <td>Single Jersey</td>
+                                <td>260 kg</td>
+                            </tr>
+                            <tr>
+                                <td>Jlunn Long</td>
+                                <td>30”</td>
+                                <td>30</td>
+                                <td>24</td>
+                                <td>90(3F)</td>
+                                <td>Single Jersey</td>
+                                <td>300 kg</td>
+                            </tr>
+                            <tr>
+                                <td>Jlunn Long</td>
+                                <td>32”</td>
+                                <td>22.5</td>
+                                <td>24</td>
+                                <td>128(4F)</td>
+                                <td>Single Jersey</td>
+                                <td>300 kg</td>
+                            </tr>
+                            <tr>
+                                <td>Fukahama</td>
+                                <td>32”</td>
+                                <td>34</td>
+                                <td>24</td>
+                                <td>102(3.2F)</td>
+                                <td>S/J Open</td>
+                                <td>500 kg</td>
+                            </tr>
+                            <tr>
+                                <td>Lisky</td>
+                                <td>32”</td>
+                                <td>23.8</td>
+                                <td>20 &amp; 24</td>
+                                <td>102(3.2F)</td>
+                                <td>Fleece &amp; S/J</td>
+                                <td>250 kg</td>
+                            </tr>
+                            <tr>
+                                <td>Fukahama</td>
+                                <td>32”</td>
+                                <td>34</td>
+                                <td>24</td>
+                                <td>102(3.2F)</td>
+                                <td>Single Jersey</td>
+                                <td>550 kg</td>
+                            </tr>
+                            <tr>
+                                <td>Lisky</td>
+                                <td>34”</td>
+                                <td>22.4</td>
+                                <td>20 / 24</td>
+                                <td>108(3.2F)</td>
+                                <td>Fleece &amp; S/J</td>
+                                <td>260 kg</td>
+                            </tr>
+                            <tr>
+                                <td>Fukahama</td>
+                                <td>34”</td>
+                                <td>32</td>
+                                <td>24</td>
+                                <td>108(3.2F)</td>
+                                <td>S/J</td>
+                                <td>550 kg</td>
+                            </tr>
+                            <tr>
+                                <td>Fukahama</td>
+                                <td>34”</td>
+                                <td>23.5</td>
+                                <td>20</td>
+                                <td>108(3.2F)</td>
+                                <td>Fleece</td>
+                                <td>260 kg</td>
+                            </tr>
+                            <tr>
+                                <td>Mayer &amp; CIE</td>
+                                <td>34”</td>
+                                <td>27.2</td>
+                                <td>24</td>
+                                <td>114(3.2F)</td>
+                                <td>S/J Open Width</td>
+                                <td>380 kg</td>
+                            </tr>
+                            <tr>
+                                <td>Mayer &amp; CIE</td>
+                                <td>36”</td>
+                                <td>28</td>
+                                <td>24</td>
+                                <td>114(3.2F)</td>
+                                <td>S/J Open Width</td>
+                                <td>420 kg</td>
+                            </tr>
+                            <tr>
+                                <td>Mayer &amp; CIE</td>
+                                <td>36”</td>
+                                <td>28</td>
+                                <td>24</td>
+                                <td>114(3.2F)</td>
+                                <td>S/J Open Width</td>
+                                <td>420 kg</td>
+                            </tr>
+                            <tr>
+                                <td>Jlunn Long</td>
+                                <td>36”</td>
+                                <td>22.2</td>
+                                <td>18 / 20 / 24 / 28</td>
+                                <td>108(3.2F)</td>
+                                <td>S/J Open Width</td>
+                                <td>280 kg</td>
+                            </tr>
+                            <tr>
+                                <td>Fukahama</td>
+                                <td>36”</td>
+                                <td>22.2</td>
+                                <td>20 &amp; 24</td>
+                                <td>114(3.2F)</td>
+                                <td>Fleece &amp; S/J Open Width</td>
+                                <td>270 kg</td>
+                            </tr>
+                            <tr>
+                                <td>Jlunn Long</td>
+                                <td>36”</td>
+                                <td>22.2</td>
+                                <td>18 / 20 / 24 / 28</td>
+                                <td>108(3F)</td>
+                                <td>Fleece &amp; S/J</td>
+                                <td>260 kg</td>
+                            </tr>
+                            <tr>
+                                <td>Jlunn Long</td>
+                                <td>38”</td>
+                                <td>21.1</td>
+                                <td>12 / 24 / 28</td>
+                                <td>114(3F)</td>
+                                <td>Single Jersey</td>
+                                <td>300 kg</td>
+                            </tr>
+                            <tr>
+                                <td>Jlunn Long</td>
+                                <td>40”</td>
+                                <td>18</td>
+                                <td>24</td>
+                                <td>160(3F)</td>
+                                <td>Single Jersey</td>
+                                <td>380 kg</td>
+                            </tr>
+                            <tr>
+                                <td>Jlunn Long</td>
+                                <td>40”</td>
+                                <td>20</td>
+                                <td>24</td>
+                                <td>120(3F)</td>
+                                <td>S/J Open Width</td>
+                                <td>300 kg</td>
+                            </tr>
+                            <tr>
+                                <td>Jlunn Long</td>
+                                <td>42”</td>
+                                <td>12.4</td>
+                                <td>24</td>
+                                <td>152(6F)</td>
+                                <td>S/J High Feeder Stripe</td>
+                                <td>400 kg</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="row g-3">
+                    <div class="col-md-3 col-6">
+                        <a href="/img/knit-01.jpg" data-lightbox="knit-gallery" data-title="Knit 01">
+                            <img src="/img/knit-01.jpg" alt="Knit 01" class="img-fluid rounded shadow-sm w-100">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="/img/knit-02.jpg" data-lightbox="knit-gallery" data-title="Knit 02">
+                            <img src="/img/knit-02.jpg" alt="Knit 02" class="img-fluid rounded shadow-sm w-100">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="/img/Knitting2.jpg" data-lightbox="knit-gallery" data-title="Knitting 2">
+                            <img src="/img/Knitting2.jpg" alt="Knitting 2" class="img-fluid rounded shadow-sm w-100">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="/img/Knitting1.jpg" data-lightbox="knit-gallery" data-title="Knitting 1">
+                            <img src="/img/Knitting1.jpg" alt="Knitting 1" class="img-fluid rounded shadow-sm w-100">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-12">
+                <h3 class="text-center mb-4" style="color:#ff6600;font-weight:600;">[B] 7 machines: Eight lock high
+                    speed Rib Interlock with full feeder Lycra attachment</h3>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Brand</th>
+                                <th>Diameter</th>
+                                <th>RPM (80%)</th>
+                                <th>Gauge</th>
+                                <th>Feeder</th>
+                                <th>Versatility</th>
+                                <th>Capacity (per day)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Jlunn Long</td>
+                                <td>30”</td>
+                                <td>22.6</td>
+                                <td>18 / 22 / 24</td>
+                                <td>60(2F)</td>
+                                <td>Rib / Interlock</td>
+                                <td>220 kg</td>
+                            </tr>
+                            <tr>
+                                <td>Jlunn Long</td>
+                                <td>32”</td>
+                                <td>21.3</td>
+                                <td>18 / 22 / 24</td>
+                                <td>64(2F)</td>
+                                <td>Rib / Interlock</td>
+                                <td>230 kg</td>
+                            </tr>
+                            <tr>
+                                <td>Jlunn Long</td>
+                                <td>34”</td>
+                                <td>20</td>
+                                <td>18 / 22 / 24</td>
+                                <td>68(2F)</td>
+                                <td>Rib / Interlock</td>
+                                <td>240 kg</td>
+                            </tr>
+                            <tr>
+                                <td>Jlunn Long</td>
+                                <td>38”</td>
+                                <td>17.9</td>
+                                <td>14 / 18 / 22 / 24 / 28</td>
+                                <td>76(2F)</td>
+                                <td>Rib / Interlock</td>
+                                <td>260 kg</td>
+                            </tr>
+                            <tr>
+                                <td>Jlunn Long</td>
+                                <td>36”</td>
+                                <td>18.9</td>
+                                <td>18 / 22 / 24</td>
+                                <td>72(2F)</td>
+                                <td>Rib / Interlock</td>
+                                <td>250 kg</td>
+                            </tr>
+                            <tr>
+                                <td>Jlunn Long</td>
+                                <td>40”</td>
+                                <td>17</td>
+                                <td>18 / 22 / 24 / 28</td>
+                                <td>80(2F)</td>
+                                <td>Rib / Interlock</td>
+                                <td>270 kg</td>
+                            </tr>
+                            <tr>
+                                <td>Jlunn Long</td>
+                                <td>44”</td>
+                                <td>15.4</td>
+                                <td>18 / 20</td>
+                                <td>88(2F)</td>
+                                <td>Rib / Interlock</td>
+                                <td>290 kg</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-12">
+                <h3 class="text-center mb-4" style="color:#ff6600;font-weight:600;">[C] 6 machines: Flat knitting
+                    machines with Lycra attachment</h3>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Brand</th>
+                                <th>Diameter</th>
+                                <th>Gauge</th>
+                                <th>Feeder</th>
+                                <th>Versatility</th>
+                                <th>Capacity (per day/machine)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Flying Horse</td>
+                                <td>40”</td>
+                                <td>14</td>
+                                <td>6-Color</td>
+                                <td>Single head</td>
+                                <td>500 set</td>
+                            </tr>
+                            <tr>
+                                <td>Flying Horse</td>
+                                <td>40”</td>
+                                <td>14</td>
+                                <td>6-Color</td>
+                                <td>Single head</td>
+                                <td>500 set</td>
+                            </tr>
+                            <tr>
+                                <td>Flying Horse</td>
+                                <td>68”</td>
+                                <td>14</td>
+                                <td>6-Color</td>
+                                <td>Single head</td>
+                                <td>500 set</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Content Section -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5 border-start-0 border-end-0"
+            style="border: 1px solid; border-color: rgb(255, 255, 255, 0.08);">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-4">
+                    <div class="footer-item">
+                        <a href="index.html" class="p-0">
+                            <h4 class="text-white"><i class="fas fa-search-dollar me-3"></i>Barnali Textile</h4>
+                            <!-- <img src="img/logo.png" alt="Logo"> -->
+                        </a>
+                        <p class="mb-4">Barnali Textile is a 100% export oriented composite knitwear manufacturing
+                            industry that has been producing premium quality readymade knit garments for its valued
+                            clients in the EU market for over two decades.</p>
+                        <div class="d-flex">
+                            <!-- <a href="#" class="bg-primary d-flex rounded align-items-center py-2 px-3 me-2">
+                                <i class="fas fa-apple-alt text-white"></i>
+                                <div class="ms-3">
+                                    <small class="text-white">Download on the</small>
+                                    <h6 class="text-white">App Store</h6>
+                                </div>
+                            </a>
+                            <a href="#" class="bg-dark d-flex rounded align-items-center py-2 px-3 ms-2">
+                                <i class="fas fa-play text-primary"></i>
+                                <div class="ms-3">
+                                    <small class="text-white">Get it on</small>
+                                    <h6 class="text-white">Google Play</h6>
+                                </div>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-2">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-4">Quick Links</h4>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Feature</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Attractions</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Tickets</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Blog</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Contact us</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-4">Support</h4>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Disclaimer</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Support</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> FAQ</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Help</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-4">Contact Info</h4>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                            <p class="text-white mb-0">123 Street New York.USA</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-envelope text-primary me-3"></i>
+                            <p class="text-white mb-0">info@example.com</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fa fa-phone-alt text-primary me-3"></i>
+                            <p class="text-white mb-0">(+012) 3456 7890</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="fab fa-firefox-browser text-primary me-3"></i>
+                            <p class="text-white mb-0">Yoursite@ex.com</p>
+                        </div>
+                        <div class="d-flex">
+                            <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i
+                                    class="fab fa-facebook-f text-white"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i
+                                    class="fab fa-twitter text-white"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i
+                                    class="fab fa-instagram text-white"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-circle me-0" href="#"><i
+                                    class="fab fa-linkedin-in text-white"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <span class="text-body"><a href="index.html" class="border-bottom text-white"><i
+                                class="fas fa-copyright text-light me-2"></i>Barnali Textiles</a>, All right
+                        reserved.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end text-body">
+                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                    Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a>
+                    Distributed By <a class="border-bottom text-white" href="https://themewagon.com">ThemeWagon</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    
+    <script>
+        lightbox.option({
+            'resizeDuration': 500,
+            'fadeDuration': 600,
+            'wrapAround': fa,
+        })
+    </script>
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <!-- <script src="lib/lightbox/js/lightbox-plus-jquery.js"></script>
+    <script src="lib/lightbox/js/lightbox-plus-jquery.min.map"></script> -->
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+
+</html>
