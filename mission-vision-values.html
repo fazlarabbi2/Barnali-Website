@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Barnali Textile - Stock Market Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <!-- <div class="container-fluid topbar bg-light px-5 d-none d-lg-block">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <a href="#" class="text-muted small me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
+                        <a href="tel:+01234567890" class="text-muted small me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+01234567890</a>
+                        <a href="mailto:example@gmail.com" class="text-muted small me-0"><i class="fas fa-envelope text-primary me-2"></i>Example@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a href="#"><small class="me-3 text-dark"><i class="fa fa-user text-primary me-2"></i>Register</small></a>
+                        <a href="#"><small class="me-3 text-dark"><i class="fa fa-sign-in-alt text-primary me-2"></i>Login</small></a>
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown"><small><i class="fa fa-home text-primary me-2"></i> My Dashboard</small></a>
+                            <div class="dropdown-menu rounded">
+                                <a href="#" class="dropdown-item"><i class="fas fa-user-alt me-2"></i> My Profile</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-comment-alt me-2"></i> Inbox</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-bell me-2"></i> Notifications</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-cog me-2"></i> Account Settings</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-power-off me-2"></i> Log Out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    <!-- Topbar End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <!--<h1 class="text-primary"><i class="fas fa-search-dollar me-3"></i>Barnali Textile</h1>-->
+                <img src="img/logo.png" alt="Barnali Textile Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Who We Are</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="mission-vision-values.html" class="dropdown-item active">Mission Vision & Values</a>
+                            <a href="at-a-glance.html" class="dropdown-item">At a Glance</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">What We Do</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="kniting.html" class="dropdown-item">Knitting</a>
+                            <a href="dyeing.html" class="dropdown-item">Dyeing</a>
+                            <a href="cutting.html" class="dropdown-item">Cutting</a>
+                            <a href="printing.html" class="dropdown-item">Printing</a>
+                            <a href="sewing.html" class="dropdown-item">Sewing</a>
+                            <a href="finishing.html" class="dropdown-item">Finishing</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Our Green Project</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="membership.html" class="dropdown-item">Membership</a>
+                            <a href="compliance.html" class="dropdown-item">Compliance</a>
+                            <a href="barnali-collection-ltd.html" class="dropdown-item">Barnali Collection Ltd</a>
+                        </div>
+                    </div>
+                    <a href="barnali-collection-ltd.html" class="nav-item nav-link">Barnali Collection Ltd</a>
+                    <a href="buyers-special.html" class="nav-item nav-link">Buyer's Special</a>
+                    <a href="our-portfolio.html" class="nav-item nav-link">Our Portfolio</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                </div>
+                <a href="#" class="btn btn-primary rounded-pill py-2 px-4 my-3 my-lg-0 flex-shrink-0">Video Profile</a>
+            </div>
+        </nav>
+
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Mission Vision & Values</h4>
+                <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Who We Are</a></li>
+                    <li class="breadcrumb-item active text-primary">Mission Vision & Values</li>
+                </ol>
+            </div>
+        </div>
+        <!-- Header End -->
+    </div>
+    <!-- Navbar & Hero End -->
+
+
+    <!-- Mission Vision Values Start -->
+    <div class="container-fluid service py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+
+            </div>
+            <div class="row">
+                <div class="col-12 wow fadeInUp" data-wow-delay="0.2s">
+
+                    <div class="mission-vision-content">
+                        <h3 class="text-primary mb-3"><strong>Company Mission & Vision Statement</strong></h3>
+                        <div class="mission-section mb-5">
+                            <p class="mb-4">
+                                Our commitment to excellence, integrity, and innovation drives everything we do at
+                                Barnali Textile. We are dedicated to delivering high-quality products while maintaining
+                                the highest standards of ethical business practices.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mission-content">
+                        <h3 class="text-primary mb-3"><strong>Mission Statement</strong></h3>
+                        <div class="mission-section mb-5">
+                            <p class="mb-4">Our Mission is providing high quality products to our customers and
+                                participating in growth and expansion of our national economy as well as to set high
+                                standard of integrity and bringing total satisfaction from our customers with
+                                Discipline, Price & Quality. Barnali Collections Ltd maintain workers health and safety
+                                issue, wages and benefit, clean environment, fire safety according to Accord/RSC and
+                                follow Bangladesh labor law -2006 and Labor rule 2015 and ILO convention.</p>
+                        </div>
+                    </div>
+
+                    <div class="vision-content">
+                        <div class="vision-section mb-5">
+                            <h3 class="text-primary mb-3"><strong>Vision Statement:</strong></h3>
+                            <p class="mb-4">Our Vision is to set a standard of finest apparel supply chain for rest of
+                                the world to follow. Achieve 100% customer satisfaction through timely delivery with any
+                                defect. To bring in best technology, upgrading the machine health and skill sets of our
+                                people. We recognize and take seriously the responsibility and precious environmental
+                                resources that are vital to human life and the economic health of our community. We are
+                                committed to safely complying with all applicable regulations to preserve the
+                                environment, aesthetic beauty, and economy in and around our service area.</p>
+                        </div>
+                    </div>
+
+                    <div class="values-content">
+                        <div class="values-section mb-5">
+                            <h3 class="text-primary mb-3"><strong>Values:</strong></h3>
+                            <p class="mb-4">Our values define the character of our company, just as much as the products
+                                and services that bear the Barnali brand. The values that provide the foundation of our
+                                organization are:</p>
+                        </div>
+                    </div>
+
+                    <div class="collab-content">
+                        <div class="value-item h-100">
+                            <h4 class="text-primary mb-3"><strong>Collaboration:</strong></h4>
+                            <p>We work with others in a collective pursuit of excellence. Collaboration is at
+                                the core of all our relationships. We collaborate with customers, colleagues,
+                                suppliers, and other partners in order to reach common goals.</p>
+                        </div>
+                    </div>
+
+                    <div class="integrity-content">
+                        <div class="Integrity-section h-100">
+                            <h4 class="text-primary mb-3"><strong>Integrity</strong></h4>
+                            <p>We act with honesty, responsibility, and respect towards all the people and
+                                organizations with which we interact.</p>
+                        </div>
+                    </div>
+
+                    <div class="leadership-content">
+                        <div class="leadership-item h-100">
+                            <h4 class="text-primary mb-3"><strong>Leadership</strong></h4>
+                            <p>We aim to be leaders not only in the garments industry, but also in all of our
+                                relationships. We are a company with a sound vision for the future based on
+                                sustainability, excellence, and innovation.</p>
+                        </div>
+                    </div>
+
+                    <div class="ethics">
+                        <div class="ethics-item h-100">
+                            <h4 class="text-primary mb-3"><strong>Ethics</strong></h4>
+                            <p>Our Code of Ethics allows BARNALI to clearly and rapidly communicate its culture
+                                and values to our employees. Ethical behavior is the key for BARNALI's success.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="compliance">
+                        <div class="compliance-item h-100">
+                            <h4 class="text-primary mb-3"><strong>Compliance</strong></h4>
+                            <p>Compliance means acting in accordance with the letter and the spirit of the law,
+                                our Code of Ethics and our corporate policies. At BARNALI, we must comply with
+                                all applicable laws and policies, without exception. The importance of this
+                                principle cannot be over stated: if we compromise on matters that we perceive as
+                                small or unimportant, we cross a threshold that can easily lead us to more
+                                serious misconduct, putting the company's and our own personal situation at
+                                risk, and causing grave harm to our corporate culture.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mission Vision Values End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5 border-start-0 border-end-0"
+            style="border: 1px solid; border-color: rgb(255, 255, 255, 0.08);">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-4">
+                    <div class="footer-item">
+                        <a href="index.html" class="p-0">
+                            <h4 class="text-white"><i class="fas fa-search-dollar me-3"></i>Barnali Textile</h4>
+                            <!-- <img src="img/logo.png" alt="Logo"> -->
+                        </a>
+                        <p class="mb-4">Barnali Textile is a 100% export oriented composite knitwear manufacturing
+                            industry that has been producing premium quality readymade knit garments for its valued
+                            clients in the EU market for over two decades.</p>
+                        <div class="d-flex">
+                            <!-- <a href="#" class="bg-primary d-flex rounded align-items-center py-2 px-3 me-2">
+                                <i class="fas fa-apple-alt text-white"></i>
+                                <div class="ms-3">
+                                    <small class="text-white">Download on the</small>
+                                    <h6 class="text-white">App Store</h6>
+                                </div>
+                            </a>
+                            <a href="#" class="bg-dark d-flex rounded align-items-center py-2 px-3 ms-2">
+                                <i class="fas fa-play text-primary"></i>
+                                <div class="ms-3">
+                                    <small class="text-white">Get it on</small>
+                                    <h6 class="text-white">Google Play</h6>
+                                </div>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-2">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-4">Quick Links</h4>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Feature</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Attractions</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Tickets</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Blog</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Contact us</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-4">Support</h4>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Disclaimer</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Support</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> FAQ</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Help</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-4">Contact Info</h4>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                            <p class="text-white mb-0">123 Street New York.USA</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-envelope text-primary me-3"></i>
+                            <p class="text-white mb-0">info@example.com</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fa fa-phone-alt text-primary me-3"></i>
+                            <p class="text-white mb-0">(+012) 3456 7890</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="fab fa-firefox-browser text-primary me-3"></i>
+                            <p class="text-white mb-0">Yoursite@ex.com</p>
+                        </div>
+                        <div class="d-flex">
+                            <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i
+                                    class="fab fa-facebook-f text-white"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i
+                                    class="fab fa-twitter text-white"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i
+                                    class="fab fa-instagram text-white"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-circle me-0" href="#"><i
+                                    class="fab fa-linkedin-in text-white"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <span class="text-body"><a href="index.html" class="border-bottom text-white"><i
+                                class="fas fa-copyright text-light me-2"></i>Barnali Textiles</a>, All right reserved.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end text-body">
+                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                    Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a>
+                    Distributed By <a class="border-bottom text-white" href="https://themewagon.com">ThemeWagon</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
