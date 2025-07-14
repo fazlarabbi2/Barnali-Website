@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Barnali Textile - Stock Market Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <!-- <div class="container-fluid topbar bg-light px-5 d-none d-lg-block">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <a href="#" class="text-muted small me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
+                        <a href="tel:+01234567890" class="text-muted small me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+01234567890</a>
+                        <a href="mailto:example@gmail.com" class="text-muted small me-0"><i class="fas fa-envelope text-primary me-2"></i>Example@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a href="#"><small class="me-3 text-dark"><i class="fa fa-user text-primary me-2"></i>Register</small></a>
+                        <a href="#"><small class="me-3 text-dark"><i class="fa fa-sign-in-alt text-primary me-2"></i>Login</small></a>
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown"><small><i class="fa fa-home text-primary me-2"></i> My Dashboard</small></a>
+                            <div class="dropdown-menu rounded">
+                                <a href="#" class="dropdown-item"><i class="fas fa-user-alt me-2"></i> My Profile</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-comment-alt me-2"></i> Inbox</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-bell me-2"></i> Notifications</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-cog me-2"></i> Account Settings</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-power-off me-2"></i> Log Out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    <!-- Topbar End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <!--<h1 class="text-primary"><i class="fas fa-search-dollar me-3"></i>Barnali Textile</h1>-->
+                <img src="img/logo.png" alt="Barnali Textile Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Who We Are</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="mission-vision-values.html" class="dropdown-item">Mission Vision &
+                                Values</a>
+                            <a href="at-a-glance.html" class="dropdown-item">At a Glance</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">What We Do</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="knitting.html" class="dropdown-item">Knitting</a>
+                            <a href="dyeing.html" class="dropdown-item">Dyeing</a>
+                            <a href="cutting.html" class="dropdown-item">Cutting</a>
+                            <a href="printing.html" class="dropdown-item">Printing</a>
+                            <a href="sewing.html" class="dropdown-item">Sewing</a>
+                            <a href="finishing.html" class="dropdown-item">Finishing</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Our Green Project</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="membership.html" class="dropdown-item">Membership</a>
+                            <a href="compliance.html" class="dropdown-item">Compliance</a>
+                        </div>
+                    </div>
+                    <a href="barnali-collection-ltd.html" class="nav-item nav-link active">Barnali Collection Ltd</a>
+                    <a href="buyers-special.html" class="nav-item nav-link">Buyer's Special</a>
+                    <a href="our-portfolio.html" class="nav-item nav-link">Our Portfolio</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                </div>
+                <a href="#" class="btn btn-primary rounded-pill py-2 px-4 my-3 my-lg-0 flex-shrink-0">Video Profile</a>
+            </div>
+        </nav>
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb" style="background-image: url(img/swimm.jpg);">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Barnali Collections Ltd</h4>
+                <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-primary active"
+                            href="barnali-collection-ltd.html">Barnali Collections Ltd</a></li>
+                </ol>
+            </div>
+        </div>
+        <!-- Header End -->
+    </div>
+    <!-- Navbar & Hero End -->
+
+
+    <!-- Content Section -->
+    <section class="container py-5">
+        <div class="row">
+            <div class="col-lg-2 col-md-3 col-sm-4 mb-4 text-center">
+                <img src="img/logo-collection.png" alt="Barnali Collections Ltd Logo" class="img-fluid">
+            </div>
+            <div class="col-lg-10 col-md-9 col-sm-8 mb-4">
+                <h1 class="text-primary text-center">About Us</h1>
+            </div>
+
+            <div class="col-12">
+                <div class="content-text" style="text-align: justify;">
+                    <p class="mb-4">
+                        <strong>Barnali Collections Ltd</strong> is a 100% Export Oriented Knit Garments Industry
+                        located in
+                        Chittaranjan Textile Polli, Arambag, Godnail, Shiddhirganj, Narayanganj-1432, Bangladesh in a
+                        4-storied modern
+                        building. It is situated on the banks of the Sitalakhya River and started its export operation
+                        in
+                        September 2021. It has been developed through its CEO and the dedicated staff under the name of
+                        <strong>Barnali Collections Ltd</strong>.
+                    </p>
+
+                    <p class="mb-4">
+                        <strong>Barnali Collections Ltd</strong> is one of the leading manufacturers located in
+                        Narayanganj,
+                        Bangladesh, serving foreign buyers. We provide services to foreign buyers concerned with
+                        identifying
+                        products in the Bangladeshi market, negotiating prices, and proper sourcing of products. We
+                        assure the highest degree of professionalism and provide a wide variety of services to foreign
+                        buyers. Our presence in the
+                        international market keeps us well-informed of customer tastes and changing market scenarios.
+                    </p>
+
+                    <p class="mb-0">
+                        We offer fast and reliable delivery, excellent Quality Control, and flexible manufacturing and
+                        production options. We have mastered producing fancy items. We have a unique methodology of
+                        paperwork that is immaculately followed and managed by our team. Our team consists of highly
+                        professional, skilled
+                        personnel trained to meet the increasing standards of the company. Our team consists of
+                        management, merchandisers, quality control, schedulers, and commercial personnel.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row mt-4 position-relative"
+            style="background-image: url(img/company-strength.jpg); background-position: center; background-size: cover;">
+            <div class="col-md-12 text-center" style="position: relative; ">
+                <h2 class="text-primary m-5" style="text-transform: capitalize; font-size: 2.5rem;">Company Strength
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Image Section -->
+                    <div class="mb-4">
+                        <a href="img/Barnali-Collections-Image22.jpg" data-lightbox="image-1"
+                            data-title="Barnali-Collections" rel="lightbox">
+                            <img src="img/Barnali-Collections-Image22.jpg" alt="Barnali-Collections"
+                                class="img-fluid rounded shadow-lg">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <ul class="list-light" style="color: black;">
+                        <li>Strong network of sourcing. With our extensive network of suppliers from all over
+                            Bangladesh, BARNALI COLLECTIONS LTD is well placed for proper vendors selections for your
+                            valued orders which includes keeping well in mind your pricing, quality and delivery
+                            requirements prior to the best vendor selections for your orders.</li>
+                        <li>BARNALI COLLECTIONS LTD owns and follows a quality manual compliant to international code
+                            and standards.</li>
+                        <li>In-house expertise in initial sampling &amp; pattern making.</li>
+                        <li>Hi-fashion garment with a lot of value addition.</li>
+                        <li>Varieties of prints in hand, machine &amp; all over.</li>
+                        <li>Different kinds of washes and dyeing, antique look range, print options.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 mt-5">
+                <h3 class="text-center text-primary mb-4">Building Description of Barnali Collections Limited</h3>
+
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle text-center table-bordered">
+                        <thead class="table-light">
+                            <tr>
+                                <th><strong>Floor Name: Building (4-Story)</strong></th>
+                                <th><strong>Description</strong></th>
+                                <th><strong>Area (sq ft)</strong></th>
+                                <th><strong>Remarks</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Ground Floor</strong></td>
+                                <td>Medical, Child Care, Knitting Area</td>
+                                <td>16,000</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Mezzanine Floor</strong></td>
+                                <td>Dining &amp; Canteen</td>
+                                <td>6,500</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td><strong>First Floor</strong></td>
+                                <td>Cutting, Sewing, Quality, and Finishing Area (Temporary Electric Boiler)</td>
+                                <td>16,000</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Second Floor</strong></td>
+                                <td>Sewing, Quality, and Finishing Area (Temporary Electric Boiler)</td>
+                                <td>16,000</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Third Floor</strong></td>
+                                <td>Office Area and Vacant Area</td>
+                                <td>16,000</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Rooftop</strong></td>
+                                <td>Vacant</td>
+                                <td></td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Utility Building (Ground Floor)</strong></td>
+                                <td>Substation, Generator, Electric Boiler Room</td>
+                                <td>3,800</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Utility Building (1<sup>st</sup> Floor)</strong></td>
+                                <td>Compressor and Utility Office Room</td>
+                                <td>3,800</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Main Gate</strong></td>
+                                <td>Security Room, Fire Control Room</td>
+                                <td>1,900</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Is this a shared building?</strong></td>
+                                <td>No</td>
+                                <td>Total = 80,000</td>
+                                <td>N/A</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 mt-5">
+                <h3 class="text-center text-primary mb-4">Overview of Our Units</h3>
+
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle table-bordered">
+                        <tbody>
+                            <tr>
+                                <td><strong>Country/Region</strong></td>
+                                <td>Narayanganj, Bangladesh</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Address</strong></td>
+                                <td>Chittaranjan Textile Polli, Arambagh, Godnail, Narayanganj</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Zip Code</strong></td>
+                                <td>1432</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 mt-5">
+                <h3 class="text-center text-primary">General Information</h3>
+                <div class="table-responsive mt-4">
+                    <table class="table table-hover align-middle table-bordered">
+                        <tbody>
+                            <tr>
+                                <td><strong>Year of Establishment</strong></td>
+                                <td>2021</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Product Range</strong></td>
+                                <td>T-shirt, Polo shirt, Tank top, Leggings (Men &amp; Ladies), Kids and Baby Items
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sales Volume</strong></td>
+                                <td>Target: $3,600,000 per year</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Approvals/Certificates</strong></td>
+                                <td><strong>LEED GOLD, BSCI, RSC, SEDEX, OCS, RCS, OEKO-TEX STANDARD 100</strong>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 mt-5">
+                <h3 class="text-center text-primary">Export Information</h3>
+                <div class="table-responsive mt-4">
+                    <table class="table table-hover align-middle table-bordered">
+                      <tbody>
+                            <tr><td><strong>Export Year</strong></td><td>2022</td></tr>
+                            <tr><td><strong>Target Market(s)</strong></td><td>GERMANY, SWEDEN, SPAIN, UK</td></tr>
+                            <tr><td><strong>Export Percentage</strong></td><td>GERMANY – 50%, SPAIN – 20%, SWEDEN – 10%, OTHERS – 20%</td></tr>
+                            <tr><td><strong>Minimum Order Quantity</strong></td><td>1500 PCS / COLOR</td></tr>
+                            <tr><td><strong>Payment Terms</strong></td><td>By Letter of Credit (LC)</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 mt-5">
+                <h3 class="text-center text-primary">Productivity Information</h3>
+                <div class="table-responsive mt-4">
+                    <table class="table table-hover align-middle table-bordered ">
+                        <tbody>
+                            <tr><td><strong>Production Lines</strong></td><td>12 (More 03 lines will be extended in future).</td></tr>
+                            <tr><td><strong>Factory Size</strong></td><td>80,000 square feet with utility building</td></tr>
+                            <tr><td><strong>Monthly Capacity</strong></td><td>500,000 Pcs</td></tr>
+                            <tr><td><strong>No. of Staffs</strong></td><td>60</td></tr>
+                            <tr><td><strong>No. of R/ D Staffs</strong></td><td>06</td></tr>
+                            <tr><td><strong>No. of Engineers</strong></td><td>04</td></tr>
+                            <tr><td><strong>No. of Q C Staffs</strong></td><td>20</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 mt-5">
+                <h3 class="text-center text-primary">Our Customers Export</h3>
+                <div class="table-responsive mt-4">
+                    <table class="table table-hover align-middle table-bordered">
+                        <thead class="table-light text-center">
+                            <tr>
+                                <th><strong>SL No</strong></th>
+                                <th><strong>Buyer</strong></th>
+                                <th><strong>Export&nbsp;(%)</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>Mister lady</td><td> 20.95%</td></tr>
+                            <tr><td>2</td><td>ECI&nbsp;(Sfera&nbsp;&amp;&nbsp;others)</td><td>23.93%</td></tr>
+                            <tr><td>3</td><td>Jeans&nbsp;Fritz</td><td>10.56%</td></tr>
+                            <tr><td>4</td><td>AWG</td><td>8.60%</td></tr>
+                            <tr><td>5</td><td>Horst&nbsp;Kruger</td><td>7.26%</td></tr>
+                            <tr><td>6</td><td>Boboli</td><td>6.71%</td></tr>
+                            <tr><td>7</td><td>Broadway</td><td>2.68%</td></tr>
+                            <tr><td>8</td><td>Mayoral</td><td>1.07%</td></tr>
+                            <tr><td>9</td><td>Snickers</td><td>5%</td></tr>
+                            <tr><td>10</td><td>Soya&nbsp;Concept</td><td>3.23%</td></tr>
+                            <tr><td>11</td><td>Districenter</td><td>3.10%</td></tr>
+                            <tr><td>12</td><td>Bossoni</td><td>5%</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 mt-5">
+                <h3 class="text-center text-primary">Machine List</h3>
+                <h5><span>SEWING MACHINE LIST</span></h5>
+                <div class="table-responsive mt-4">
+                    <table class="table table-hover align-middle table-bordered">
+                        <thead class="table-light text-center">
+                            <tr>
+                                <th><strong>Brand Name</strong></th>
+                                <th><strong>Machine Type</strong></th>
+                                <th><strong>Model</strong></th>
+                                <th><strong>Made By</strong></th>
+                                <th><strong>QTY</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="5">Pegasus</td>
+                                <td>Overlock</td>
+                                <td>MX5214-MO3/333-2x4/KS/W51(Pressure Foot Lifter)</td>
+                                <td>Vietnam</td>
+                                <td>108</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">Cylinder Bed</td>
+                                <td>W664P-01GB/356/UT333/W70 (With Top Trimmer)</td>
+                                <td>Japan</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>W264HP-01GBx356/UT326/PT/W69</td>
+                                <td>China</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>WT264P-35NBx356/FTOC/UT327/PT/W70</td>
+                                <td>China</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>Flat Bed</td>
+                                <td>W562P-02GBX356/W70</td>
+                                <td>Japan</td>
+                                <td>19</td>
+                            </tr>
+                            <tr>
+                                <td>Juki</td>
+                                <td>Single Needle</td>
+                                <td>DDL-7000A-S-7BK</td>
+                                <td>China</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="6">Brother</td>
+                                <td>Single Needle</td>
+                                <td>S7250A-503P</td>
+                                <td>China</td>
+                                <td>102</td>
+                            </tr>
+                            <tr>
+                                <td>Single Needle Side Cutter Auto</td>
+                                <td>S-7780A-503-31-64</td>
+                                <td>China</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>Feed of the Arm</td>
+                                <td>DA-927A-1-264 (Servo Motor)</td>
+                                <td>China</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>Bar Tacker</td>
+                                <td>KE-430HS-03</td>
+                                <td>China</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Button Attach</td>
+                                <td>BE-438HS</td>
+                                <td>China</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>Button Hole</td>
+                                <td>HE800C-3</td>
+                                <td>China</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">Yamato</td>
+                                <td>Over lock (Round Neck)</td>
+                                <td>AZF8420-Y5DF/K2/RS25C/CF/HF/CM/GD40</td>
+                                <td>Japan</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Over lock (Elastic Attach)</td>
+                                <td>AZF8471-Y5DF-10/K2/AM/CC4/TFU-16-3-UT-2/HF-20M/GD40</td>
+                                <td>Japan</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">Kansal</td>
+                                <td>P M D</td>
+                                <td>DFB1411P-XP/SERVO MOTOR</td>
+                                <td>Japan</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Picoting</td>
+                                <td>PX-302-4W/SERVO MOTOR</td>
+                                <td>Japan</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>TOYO</td>
+                                <td>Snap Button</td>
+                                <td>TY-93</td>
+                                <td>China</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Dino</td>
+                                <td>Rib Cutter</td>
+                                <td>LU-922</td>
+                                <td>Taiwan</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">&nbsp;</td>
+                                <td><strong>Total</strong></td>
+                                <td><strong>335 Set</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 mt-5">
+                <h5><span>Finishing Machine List</span></h5>
+                <div class="table-responsive mt-4">
+                    <table class="table table-hover align-middle table-bordered">
+                        <thead class="table-light text-center">
+                            <tr>
+                                <th><strong>Brand Name</strong></th>
+                                <th><strong>Machine Type</strong></th>
+                                <th><strong>Model</strong></th>
+                                <th><strong>Made By</strong></th>
+                                <th><strong>QTY</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">Velt</td>
+                                <td>Vacuum Table</td>
+                                <td>VEIT 4435 UNISET (S) 200-220V/50HZ/700W 130X80</td>
+                                <td>Germany</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>Spot Removal Machine</td>
+                                <td>VEIT 7440</td>
+                                <td>Germany</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">NISHO</td>
+                                <td>Thread Suction</td>
+                                <td>NH-TS5600A</td>
+                                <td>China</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Thread Re Winding</td>
+                                <td>NW-40C</td>
+                                <td>China</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Hashima</td>
+                                <td>Needle Detector</td>
+                                <td>HN-790G-120</td>
+                                <td>Japan</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Hashima</td>
+                                <td>Fusing</td>
+                                <td>HP-450 MS</td>
+                                <td>Japan</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>KM</td>
+                                <td>Cloth Cutter</td>
+                                <td>KS-AU-V 10’’</td>
+                                <td>Japan</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">&nbsp;</td>
+                                <td><strong>Total</strong></td>
+                                <td><strong>41 Set</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 mt-5">
+                <h5><span>Knitting Machine List</span></h5>
+                <div class="table-responsive mt-4">
+                    <table class="table table-hover align-middle table-bordered">
+                        <thead class="table-light text-center">
+                            <tr><th>M/C DIA</th><th>GAUGE</th><th>RPM</th><th>FEEDER</th><th>BRAND</th><th>COUNTRY ORIGIN</th><th>YEAR</th><th>VERSATILITY</th><th>PRODUCTION / DAY</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>28"</td><td>24</td><td>25</td><td>112 (4F)</td><td>Jiunn Long</td><td>Taiwan</td><td>2007</td><td>S/J</td><td>400 kg</td></tr>
+                            <tr><td>32"</td><td>24</td><td>22</td><td>128 (4F)</td><td>Jiunn Long</td><td>Taiwan</td><td>2021</td><td>S/J</td><td>450 kg</td></tr>
+                            <tr><td>32"</td><td>20 &amp; 24</td><td>20</td><td>96 (3F)</td><td>Jiunn Long</td><td>Taiwan</td><td>2021</td><td>Fleece &amp; S/J</td><td>350 kg</td></tr>
+                            <tr><td>34"</td><td>24</td><td>21</td><td>136 (4F)</td><td>Jiunn Long</td><td>Taiwan</td><td>2021</td><td>S/J</td><td>450 kg</td></tr>
+                            <tr><td>34"</td><td>20 &amp; 24</td><td>20</td><td>102 (3F)</td><td>Jiunn Long</td><td>Taiwan</td><td>2021</td><td>Fleece</td><td>350 kg</td></tr>
+                            <tr><td>36"</td><td>24</td><td>25</td><td>114 (3.2F)</td><td>MAYER &amp; CIE.</td><td>German</td><td>2011</td><td>S/J Open Width</td><td>450 kg</td></tr>
+                            <tr><td>36"</td><td>24</td><td>28</td><td>108 (3F)</td><td>Yonthin</td><td>China</td><td>2023</td><td>S/J Open Width</td><td>550 kg</td></tr>
+                            <tr><td>34"</td><td>18 &amp; 24</td><td>22</td><td>68 (2F)</td><td>HANG XING</td><td>China</td><td>2023</td><td>Rib/Interlock</td><td>220 kg</td></tr>
+                            <tr><td>36"</td><td>18,24</td><td>22</td><td>72 (2F)</td><td>HANG XING</td><td>China</td><td>2023</td><td>Rib/Interlock</td><td>220 kg</td></tr>
+                            <tr><td>32"</td><td>20 &amp; 24</td><td>20</td><td>54 F</td><td>HANG XING</td><td>China</td><td>2021</td><td>S/J AUTO STRIPE</td><td>150 kg</td></tr>
+                            <tr><td>34"</td><td>20 &amp; 24</td><td>19</td><td>54 F</td><td>HANG XING</td><td>China</td><td>2021</td><td>S/J AUTO STRIPE</td><td>150 kg</td></tr>
+                            <tr><td>36"</td><td>20 &amp; 24</td><td>18</td><td>54 F</td><td>HANG XING</td><td>China</td><td>2021</td><td>S/J AUTO STRIPE</td><td>150 kg</td></tr>
+                            <tr><td>32"</td><td>24</td><td>18</td><td>64</td><td>HANG XING</td><td>China</td><td>2021</td><td>S/J FULL JACQUARD STRIPE</td><td>120 kg</td></tr>
+                            <tr><td>34"</td><td>24</td><td>16</td><td>72</td><td>HANG XING</td><td>China</td><td>2021</td><td>S/J FULL JACQUARD STRIPE</td><td>150 kg</td></tr>
+                            <tr><td>36"</td><td>24</td><td>16</td><td>72</td><td>HANG XING</td><td>China</td><td>2021</td><td>S/J FULL JACQUARD STRIPE</td><td>150 kg</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 mt-5">
+                <h5 class="text-primary text-center">Collar Machine List</h5>
+                <div class="table-responsive mt-4">
+                    <table class="table table-hover align-middle table-bordered">
+                        <thead class="table-light text-center">
+                            <tr>
+                                <th>M/C BAD</th>
+                                <th>GAUGE</th>
+                                <th>HEAD</th>
+                                <th>BRAND</th>
+                                <th>COUNTRY</th>
+                                <th>YEAR</th>
+                                <th>VERSATILITY</th>
+                                <th>PRODUCTION</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>48''</td><td>14</td><td>SINGLE HEAD 2pc</td><td>Shima Seiki</td><td>Japan</td><td>2021</td><td>Full jacquard</td><td>500-Set</td></tr>
+                            <tr><td>60''</td><td>14</td><td>DOUBLE HEAD 4pc</td><td>Shima Seiki</td><td>Japan</td><td>2021</td><td>Semi jacquard</td><td>1200-Set</td></tr>
+                            <tr><td>40''</td><td>14</td><td>SINGLE HEAD 2pc</td><td>AROUND STEAR</td><td>China</td><td>2015</td><td>Semi jacquard</td><td>500-Set</td></tr>
+                            <tr><td>68''</td><td>14</td><td>DOUBLE HEAD 2pc</td><td>AROUND STEAR</td><td>China</td><td>2015</td><td>Semi jacquard</td><td>1000-Set</td></tr>
+                            <tr><td style="text-align: left !important;" colspan="8">Fabrics Inspection, Re-Conning &amp; Doubling Machine.</td></tr>
+                            <tr><td>01</td><td>&nbsp;</td><td colspan="2">Fabrics Inspection</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>01 Set</td></tr>
+                            <tr><td>02</td><td>&nbsp;</td><td colspan="2">Re-Conning &amp; Doubling Machine</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>01 Set</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        <div class="row">
+            <div class="col-md-12 mt-5">
+                <h5 class="text-primary text-center">Source of Utility</h5>
+                <div class="table-responsive mt-4">
+                    <table class="table table-hover align-middle table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Brand Name</th>
+                                <th>Machine Type</th>
+                                <th>Model/Serial No</th>
+                                <th>Made By</th>
+                                <th>QTY</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>FG Wilson</td><td>Diesel Generator</td><td>Perkins 4008TAG2A</td><td>UK</td><td>01</td></tr>
+                            <tr><td>Sub Station</td><td>1250 KvA from (REB)</td><td>1250-0030</td><td>India</td><td>01</td></tr>
+                            <tr><td>Velt</td><td>Steam Generator</td><td>2381 APPROX: 78 KG/H STEAM 400V/60 KW/50HZ</td><td>Germany</td><td>02</td></tr>
+                            <tr><td rowspan="2">Compressor</td><td>Screw Air Compressor</td><td>SCR100APM-8</td><td>CHINA</td><td>01</td></tr>
+                            <tr><td>Atlas Copco</td><td>API869448</td><td>BELGIUM</td><td>01</td></tr>
+                            <tr><td>Air Dryer</td><td>SCR &amp; Atlas Copco</td><td>SCR-0170HTF &amp; FX250 (E13)</td><td>&nbsp;</td><td>02</td></tr>
+                            <tr><td>Water</td><td>Dhaka Water Supply Authority (WASA)</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                            <tr><td style="text-align: right !important;" colspan="4">Total =</td><td>08 Set</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+            </div>
+        <div class="row">
+            <div class="col-md-12 mt-5">
+                <h5 class="text-primary text-center">Fire Detection & Protection Systems</h5>
+                <div class="table-responsive mt-4">
+                    <table class="table table-hover align-middle table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Brand Name</th>
+                                <th>Machine Type</th>
+                                <th>Model/Serial No</th>
+                                <th>Made By</th>
+                                <th>QTY</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Naffco</td><td>Jockey Pump</td><td>NF-VL-8-120</td><td>India</td><td>01 Set</td></tr>
+                            <tr><td>Naffco</td><td>Motor Driven Fire Pump</td><td>NF-S-150-100</td><td>UAE</td><td>01 Set</td></tr>
+                            <tr><td>Naffco</td><td>Diesel Engine Driven Fire Pump</td><td>NF-S-150-100</td><td>India</td><td>01 Set</td></tr>
+                            <tr><td>Simplex</td><td>Fire Control Panel</td><td>4100-9701</td><td>USA</td><td>01 Pcs</td></tr>
+                            <tr><td style="text-align: right !important;" colspan="4">Total =</td><td>04 Set</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-12">
+                <h3 class="text-center text-primary mb-4" style="text-transform:capitalize;font-weight:600;">Membership
+                </h3>
+                <div class="d-flex justify-content-center mb-4">
+                    <ul class="list-group list-group-flush w-auto shadow-sm"
+                        style="background:rgba(255,255,255,1); border-radius:140px;">
+                        <li class="list-group-item text-center" style="font-weight:500; color:#0d6efd; border:none;">
+                            <i class="fas fa-users me-2"></i> Bangladesh Knitwear Manufacturers &amp; Exporters
+                            Association (BKMEA)
+                        </li>
+                        <li class="list-group-item text-center" style="font-weight:500; color:#0d6efd; border:none;">
+                            <i class="fas fa-users me-2"></i> Narayanganj Chamber of Commerce &amp; Industry (NCCI),
+                            Bangladesh
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 mt-4">
+                <h3 class="text-center text-primary mb-4" style="font-weight: 500px;">Compliance Certificates &
+                    Accomplishments</h3>
+
+                <div class="table-responsive">
+                    <table class="table text-center table-hover table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Logo</th>
+                                <th>Certification</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td><img src="img/cc-1.jpg"></td>
+                                <td>LEED Gold Certified from U.S. Green Building Council</td>
+                                <td>Gold Certified</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/cc-2.jpg"></td>
+                                <td>ACCORD on Fire and Building Safety in Bangladesh</td>
+                                <td>Factory Categorized as Green Category in Structural Part</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/cc-3.jpg"></td>
+                                <td>OEKO-TEX Standard 100 Certified Garments:09.HBD.66950<br>OEKO-TEX Standard 100
+                                    Certified Dyeing:14.HBD.40428<br>OEKO-TEX Standard 100 Certified
+                                    Printing:16.HBD.87007</td>
+                                <td>Certified</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/cc-4.jpg"></td>
+                                <td>Business Social Compliance Initiative (BSCI)</td>
+                                <td>Certified (audited annually)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/cc-5.jpg"></td>
+                                <td>Global Organic Textile Standard (GOTS)</td>
+                                <td>Certified</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/cc-6.jpg"></td>
+                                <td>Recycled Claim Standard (RCS)</td>
+                                <td>Certified</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/cc-7.jpg"></td>
+                                <td>Organic Content Standard (OCS)<br>Organic Content Standard 100<br>Organic Content
+                                    Standard Blended</td>
+                                <td>Certified</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/cc-8.jpg"></td>
+                                <td>Supplier Ethical Data Exchange(SEDEX)</td>
+                                <td>Certified (audited annually)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- End Content Section -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5 border-start-0 border-end-0"
+            style="border: 1px solid; border-color: rgb(255, 255, 255, 0.08);">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-4">
+                    <div class="footer-item">
+                        <a href="index.html" class="p-0">
+                            <h4 class="text-white"><i class="fas fa-search-dollar me-3"></i>Barnali Textile</h4>
+                            <!-- <img src="img/logo.png" alt="Logo"> -->
+                        </a>
+                        <p class="mb-4">Barnali Textile is a 100% export oriented composite knitwear manufacturing
+                            industry that has been producing premium quality readymade knit garments for its valued
+                            clients in the EU market for over two decades.</p>
+                        <div class="d-flex">
+                            <!-- <a href="#" class="bg-primary d-flex rounded align-items-center py-2 px-3 me-2">
+                                <i class="fas fa-apple-alt text-white"></i>
+                                <div class="ms-3">
+                                    <small class="text-white">Download on the</small>
+                                    <h6 class="text-white">App Store</h6>
+                                </div>
+                            </a>
+                            <a href="#" class="bg-dark d-flex rounded align-items-center py-2 px-3 ms-2">
+                                <i class="fas fa-play text-primary"></i>
+                                <div class="ms-3">
+                                    <small class="text-white">Get it on</small>
+                                    <h6 class="text-white">Google Play</h6>
+                                </div>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-2">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-4">Quick Links</h4>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Feature</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Attractions</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Tickets</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Blog</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Contact us</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-4">Support</h4>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Disclaimer</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Support</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> FAQ</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Help</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-4">Contact Info</h4>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                            <p class="text-white mb-0">123 Street New York.USA</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-envelope text-primary me-3"></i>
+                            <p class="text-white mb-0">info@example.com</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fa fa-phone-alt text-primary me-3"></i>
+                            <p class="text-white mb-0">(+012) 3456 7890</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="fab fa-firefox-browser text-primary me-3"></i>
+                            <p class="text-white mb-0">Yoursite@ex.com</p>
+                        </div>
+                        <div class="d-flex">
+                            <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i
+                                    class="fab fa-facebook-f text-white"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i
+                                    class="fab fa-twitter text-white"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i
+                                    class="fab fa-instagram text-white"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-circle me-0" href="#"><i
+                                    class="fab fa-linkedin-in text-white"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <span class="text-body"><a href="index.html" class="border-bottom text-white"><i
+                                class="fas fa-copyright text-light me-2"></i>Barnali Textiles</a>, All right
+                        reserved.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end text-body">
+                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                    Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a>
+                    Distributed By <a class="border-bottom text-white" href="https://themewagon.com">ThemeWagon</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+        lightbox.option({
+            'resizeDuration': 500,
+            'fadeDuration': 600,
+            'wrapAround': false,
+        })
+    </script>
+</body>
+
+</html>
