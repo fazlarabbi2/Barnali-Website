@@ -233,7 +233,7 @@
                     <link href="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.css" rel="stylesheet" />
                     <div style="left: 10px; width: 100%; max-width: 720px;">
                         <video id="barnali-player" class="img-fluid" style="width: 100%; height: auto; opacity: 0.9;"
-                            controls playsinline>
+                            controls playsinline muted autoplay loop>
                             <source src="img/Barnali_Textile.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -242,7 +242,7 @@
                     <script>
                         document.addEventListener('DOMContentLoaded', function () {
                             const player = new Plyr('#barnali-player', {
-                                autoplay: false,
+                                autoplay: true,
                                 muted: true,
                                 loop: { active: true },
                                 controls: [
@@ -975,7 +975,7 @@
                 <div class="col-md-6 col-lg-6 col-xl-4">
                     <div class="footer-item">
                         <a href="index.html" class="p-0">
-                            <h4 class="text-white"><i class="fas fa-search-dollar me-3"></i>Barnali Textile</h4>
+                            <h4 class="text-white"><i class="fas fa-industry me-3"></i>Barnali Textile</h4>
                             <!-- <img src="img/logo.png" alt="Logo"> -->
                         </a>
                         <p class="mb-4">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit
