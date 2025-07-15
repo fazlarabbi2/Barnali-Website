@@ -96,12 +96,11 @@
         <!-- Header Start -->
         <div class="container-fluid bg-breadcrumb" style="background-image: url(img/ff.jpg);">
             <div class="container text-center py-5" style="max-width: 900px;">
-                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Membership</h4>
+                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Portfolio</h4>
                 <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Our Green Project</a></li>
                     <li class="breadcrumb-item active text-primary"><a class="text-primary"
-                            href="membership.html">Membership</a>
+                            href="our-portfolio.html">Our Portfolio</a>
                     </li>
                 </ol>
             </div>
@@ -112,86 +111,27 @@
 
     <!-- Content Section -->
     <section class="container py-5">
-        <div class="row mb-5">
-            <div class="col-12">
-                <h3 class="text-center text-primary mb-4" style="text-transform:capitalize;font-weight:600;">Membership
-                </h3>
-                <div class="d-flex justify-content-center mb-4">
-                    <ul class="list-group list-group-flush w-auto shadow-sm"
-                        style="background:rgba(255,255,255,1); border-radius:140px;">
-                        <li class="list-group-item text-center" style="font-weight:500; color:#0d6efd; border:none;">
-                            <i class="fas fa-users me-2"></i> Bangladesh Knitwear Manufacturers &amp; Exporters
-                            Association (BKMEA)
-                        </li>
-                        <li class="list-group-item text-center" style="font-weight:500; color:#0d6efd; border:none;">
-                            <i class="fas fa-users me-2"></i> Narayanganj Chamber of Commerce &amp; Industry (NCCI),
-                            Bangladesh
-                        </li>
-                    </ul>
-                </div>
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                    type="button" role="tab" aria-controls="nav-home" aria-selected="true">All</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                    type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Man</button>
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                    type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Women</button>
+                <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled"
+                    type="button" role="tab" aria-controls="nav-disabled" aria-selected="false">Kids</button>
             </div>
-            <div class="col-12 mt-4">
-                <h3 class="text-center text-primary mb-4" style="font-weight: 500px;">Compliance Certificates &
-                    Accomplishments</h3>
-
-                <div class="table-responsive">
-                    <table class="table text-center table-hover table-bordered">
-                        <thead>
-                            <tr>
-                                <th>Logo</th>
-                                <th>Certification</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td><img src="img/cc-1.jpg"></td>
-                                <td>LEED Gold Certified from U.S. Green Building Council</td>
-                                <td>Gold Certified</td>
-                            </tr>
-                            <tr>
-                                <td><img src="img/cc-2.jpg"></td>
-                                <td>ACCORD on Fire and Building Safety in Bangladesh</td>
-                                <td>Factory Categorized as Green Category in Structural Part</td>
-                            </tr>
-                            <tr>
-                                <td><img src="img/cc-3.jpg"></td>
-                                <td>OEKO-TEX Standard 100 Certified Garments:09.HBD.66950<br>OEKO-TEX Standard 100
-                                    Certified Dyeing:14.HBD.40428<br>OEKO-TEX Standard 100 Certified
-                                    Printing:16.HBD.87007</td>
-                                <td>Certified</td>
-                            </tr>
-                            <tr>
-                                <td><img src="img/cc-4.jpg"></td>
-                                <td>Business Social Compliance Initiative (BSCI)</td>
-                                <td>Certified (audited annually)</td>
-                            </tr>
-                            <tr>
-                                <td><img src="img/cc-5.jpg"></td>
-                                <td>Global Organic Textile Standard (GOTS)</td>
-                                <td>Certified</td>
-                            </tr>
-                            <tr>
-                                <td><img src="img/cc-6.jpg"></td>
-                                <td>Recycled Claim Standard (RCS)</td>
-                                <td>Certified</td>
-                            </tr>
-                            <tr>
-                                <td><img src="img/cc-7.jpg"></td>
-                                <td>Organic Content Standard (OCS)<br>Organic Content Standard 100<br>Organic Content
-                                    Standard Blended</td>
-                                <td>Certified</td>
-                            </tr>
-                            <tr>
-                                <td><img src="img/cc-8.jpg"></td>
-                                <td>Supplier Ethical Data Exchange(SEDEX)</td>
-                                <td>Certified (audited annually)</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                tabindex="0">...</div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                ...</div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                ...</div>
+            <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab"
+                tabindex="0">...</div>
         </div>
     </section>
     <!-- End Content Section -->

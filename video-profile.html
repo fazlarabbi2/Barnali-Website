@@ -112,14 +112,26 @@
     <!-- Content Start -->
     <div class="container py-5">
         <div class="container">
+            <!-- Plyr.io Video Embed Start -->
+            <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
             <div class="row justify-content-center">
                 <div class="col-md-6 col-12 mb-4">
-                    <div class="ratio ratio-16x9">
-                        <iframe title="YouTube video player" src="https://www.youtube.com/embed/Abio3lNxfNc?rel=0"
-                            allowfullscreen></iframe>
+                    <div class="plyr__video-embed" id="player">
+                        <iframe
+                            src="https://www.youtube.com/embed/Abio3lNxfNc?si=RPqWoI4WCkg3PEBN&origin=https://yourdomain.com&enablejsapi=1"
+                            allowfullscreen allowtransparency allow="autoplay"></iframe>
                     </div>
                 </div>
             </div>
+            <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const player = new Plyr('#player', {
+                        youtube: { noCookie: false }
+                    });
+                });
+            </script>
+            <!-- Plyr.io Video Embed End -->
         </div>
     </div>
     <!-- Content End -->
