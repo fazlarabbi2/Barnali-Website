@@ -990,3 +990,7 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+    font-smooth: auto;
+}
