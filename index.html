@@ -230,15 +230,28 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInRight position-relative" data-wow-delay="0.2s">
+                    <link href="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.css" rel="stylesheet" />
                     <div style="left: 10px; width: 100%; max-width: 720px;">
-                        <video class="img-fluid" style="width: auto; height: auto; opacity: 0.9;" controls muted
-                            autoplay loop playsinline>
+                        <video id="barnali-player" class="img-fluid" style="width: 100%; height: auto; opacity: 0.9;"
+                            controls playsinline>
                             <source src="img/Barnali_Textile.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
+                    <script src="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.polyfilled.min.js"></script>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                            const player = new Plyr('#barnali-player', {
+                                autoplay: false,
+                                muted: true,
+                                loop: { active: true },
+                                controls: [
+                                    'play-large', 'play', 'progress', 'current-time', 'mute', 'volume', 'settings', 'fullscreen'
+                                ]
+                            });
+                        });
+                    </script>
                 </div>
-
             </div>
         </div>
     </div>
@@ -353,7 +366,7 @@
     <!-- Services End -->
 
     <!-- Features Start -->
-    <div class="container-fluid feature pb-5">
+    <!-- <div class="container-fluid feature pb-5">
         <div class="container pb-5">
             <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
                 <h4 class="text-primary">Our Features</h4>
@@ -414,7 +427,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Features End -->
 
 
@@ -733,7 +746,6 @@
         </div>
     </div>
     <!-- FAQs End -->
-    -->
 
     <!-- Team Start -->
     <div class="container-fluid team pb-5">
