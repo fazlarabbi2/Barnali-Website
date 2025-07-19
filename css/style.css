@@ -1031,3 +1031,7 @@
 body {
     font-smooth: auto;
 }
+
+.table-style{
+    text-align: center;
+}
