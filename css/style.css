@@ -1032,6 +1032,6 @@ body {
     font-smooth: auto;
 }
 
-.table-style{
-    text-align: center;
+.text-justify{
+    text-align: justify;
 }
