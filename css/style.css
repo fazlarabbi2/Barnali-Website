@@ -391,13 +391,13 @@
     background-position: right;
     background-repeat: no-repeat;
     background-size: auto 100%;
-    padding: 140px 0 60px 0;
+    padding: 100px 0 60px 0;
     transition: 0.5s;
 }
 
 @media (min-width: 992px) {
     .bg-breadcrumb {
-        padding: 100px 0 60px 0;
+        padding: 90px 0 60px 0;
     }
 }
 
